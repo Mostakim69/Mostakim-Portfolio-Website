@@ -21,6 +21,11 @@ Let’s build something meaningful together!`,
       icon: "FaLinkedinIn",
     },
     {
+      socialMediaName: "facebook",
+      url: "https://www.facebook.com/MostakimHosennnn",
+      icon: "AiFillFacebook",
+    },
+    {
       socialMediaName: "twitter",
       url: "https://x.com/mostakim14467",
       icon: "AiOutlineTwitter",

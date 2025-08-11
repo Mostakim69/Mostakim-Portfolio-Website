@@ -5,7 +5,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Footer from "../components/Footer";
 import Project from "./Project";
-import Education from "./Education"; // ✅ Import added
+import Education from "./Education";
 import { Element } from "react-scroll";
 
 function Layout() {
@@ -21,7 +21,6 @@ function Layout() {
         <About />
       </Element>
 
-      {/* ✅ Education section added here */}
       <Element name="Education-section">
         <Education />
       </Element>

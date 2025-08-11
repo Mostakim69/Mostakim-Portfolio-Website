@@ -6,6 +6,7 @@ import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
+  AiFillFacebook,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -15,6 +16,7 @@ function Home() {
   const socialMediaIcons = {
     AiFillGithub: AiFillGithub,
     FaLinkedinIn: FaLinkedinIn,
+    AiFillFacebook: AiFillFacebook,
     AiOutlineTwitter: AiOutlineTwitter,
     AiFillInstagram: AiFillInstagram,
   };
