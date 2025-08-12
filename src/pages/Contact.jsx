@@ -1,5 +1,69 @@
+export const UserData = {
+  name: "Md Mostakim Hosen",
+  about :   `Hi, I’m Md Mostakim Hosen, a frontend developer with a passion for clean code and creative design. My journey in programming started with curiosity, and over time, it became something I truly love. I enjoy building responsive, user-friendly interfaces using technologies like React.js, Tailwind CSS, and JavaScript.
+
+I love solving real-world problems through code and turning ideas into functional web applications. Whether it’s a simple landing page or a dynamic user dashboard, I always focus on performance, design, and user experience.
+
+Outside of coding, I enjoy music, especially emotional songs, watching football, and spending time with my thoughts. I also dream of becoming a teacher — someone who can inspire and guide the next generation.
+
+Let’s build something meaningful together!`,
+  resumeUrl : "Google docks",
+  FooterLink : "https://github.com/Mostakim69",
+  socialMedia: [
+    {
+      socialMediaName: "github",
+      url: "https://github.com/Mostakim69",
+      icon: "AiFillGithub",
+    },
+    {
+      socialMediaName: "linkedin",
+      url: "https://www.linkedin.com/in/mostakim-hosen9/",
+      icon: "FaLinkedinIn",
+    },
+    {
+      socialMediaName: "facebook",
+      url: "https://www.facebook.com/MostakimHosennnn",
+      icon: "AiFillFacebook",
+    },
+    {
+      socialMediaName: "twitter",
+      url: "https://x.com/mostakim14467",
+      icon: "AiOutlineTwitter",
+    },
+    {
+      socialMediaName: "instagram",
+      url: "https://www.instagram.com/posterboy3369/#",
+      icon: "AiFillInstagram",
+    },
+  ],
+  typewriterOptions: {
+    strings: [
+      "Frontend Developer",
+      "React Developer",
+      "Tailwind CSS Specialist",
+      "JavaScript Lover",
+      "Responsive Web Design",
+      "MERN Stack Developer",
+      "Javascript Developer",
+    ],
+    autoStart: true,
+    loop: true,
+    deleteSpeed: 30,
+  },
+};
+
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
+import { AiFillGithub, AiOutlineTwitter, AiFillInstagram, AiFillFacebook } from 'react-icons/ai';
+import { FaLinkedinIn } from 'react-icons/fa';
+
+const iconMap = {
+  AiFillGithub: AiFillGithub,
+  FaLinkedinIn: FaLinkedinIn,
+  AiFillFacebook: AiFillFacebook,
+  AiOutlineTwitter: AiOutlineTwitter,
+  AiFillInstagram: AiFillInstagram,
+};
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -137,6 +201,23 @@ const Contact = () => {
             <div className="text-gray-700 space-y-2 sm:space-y-3 text-sm sm:text-base">
               <p><span className="font-semibold">Whatsapp:</span> +880-1821-023369</p>
               <p><span className="font-semibold">Email:</span> mdmostakimhosen35@gmail.com</p>
+            </div>
+            <div className="mt-4 flex space-x-4">
+              {UserData.socialMedia.map((social, index) => {
+                const Icon = iconMap[social.icon];
+                if (!Icon) return null;
+                return (
+                  <a
+                    key={index}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-700 hover:text-blue-600 transition-colors"
+                  >
+                    <Icon size={24} />
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>
