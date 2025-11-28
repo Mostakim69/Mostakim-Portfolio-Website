@@ -8,7 +8,7 @@ const Cursor = () => {
     const updateMousePosition = (e) => {
       setMousePositions((prevPositions) => [
         { x: e.clientX, y: e.clientY },
-        ...prevPositions.slice(0, 10), // Keep repo check
+        ...prevPositions.slice(0, 10), 
       ]);
     };
 

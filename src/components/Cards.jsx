@@ -10,7 +10,7 @@ function Cards() {
 
     setShowFullDescription(index === showFullDescription ? null : index);
   };
-
+//   console.log("showFullDescription", showFullDescription);
   return (
     <>
       {projectsToDisplay.map((project, index) => (
