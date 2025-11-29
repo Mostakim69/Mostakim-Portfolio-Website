@@ -23,7 +23,7 @@ function Home() {
 
   return (
     <div className="mb-28 h-auto w-full sm:mb-0 md:h-screen flex items-center justify-center">
-      <div className="mx-auto flex w-[90%] flex-col-reverse items-center sm:flex-row lg:w-[80%] lg:justify-between">
+      <div className="mx-auto flex w-[90%] flex-col-reverse items-center sm:flex-col md:flex-row lg:w-[80%] lg:justify-between">
         {/* === Left Section === */}
         <div className="w-full text-center sm:text-left mt-10 sm:mt-0">
           <h2 className="text-3xl font-semibold text-gray-900 lg:text-3xl">
@@ -68,7 +68,7 @@ function Home() {
         </div>
 
         {/* === Banner Image Section === */}
-        <div className="w-full sm:w-[50%] flex justify-center">
+        <div className="w-full sm:w-[70%] md:w-[50%] flex justify-center mb-6 md:mb-0">
           <img
             className="w-[90%] max-w-md sm:max-w-lg lg:max-w-xl rounded-xl object-cover"
             src="https://i.postimg.cc/PqNFqmhK/1-1.png"
